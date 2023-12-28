@@ -1,0 +1,40 @@
+%! Author = Atticus Blanco
+%! Date = 12/28/2023
+
+% Preamble
+\documentclass[11pt]{article}
+\renewcommand{\thesubsection}{}
+\renewcommand{\thesection}{}
+
+
+\usepackage{listings}
+\usepackage{color}
+
+\lstdefinestyle{JavaStyle}{
+    language=Java,
+    basicstyle=\small\ttfamily,
+    tabsize=2,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!40!black},
+    stringstyle=\color{red},
+    backgroundcolor=\color[RGB]{128, 128, 128}
+}
+
+% Document
+\begin{document}
+\title{Java Algorithms}
+\author{Atticus Blanco}
+
+\maketitle
+
+    \section{Sorting Algorithms}
+
+        \subsection{Bubble Sort}
+            \lstinputlisting[style=JavaStyle]{search/BubbleSort.java}
+
+        \subsection{Selection Sort}
+
+    \section{Search Algorithms}
+
+
+\end{document}
