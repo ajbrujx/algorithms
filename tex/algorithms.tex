@@ -9,6 +9,7 @@
 
 \usepackage{listings}
 \usepackage{color}
+\usepackage{afterpage}
 
 \lstdefinestyle{JavaStyle}{
     language=Java,
@@ -27,15 +28,54 @@
 
 \maketitle
 
-    \section{Sorting Algorithms}
+    \clearpage
 
-        \subsection{Bubble Sort}
-            \lstinputlisting[style=JavaStyle]{sorting/BubbleSort.java}
+\tableofcontents
+
+    \section{Sorting Algorithms}\label{sec:sorting-algorithms}
+
+    \clearpage
+
+\subsection{Bubble Sort}
+            \lstinputlisting[style=JavaStyle, firstline=3, lastline=15]{sorting/BubbleSort.java}
 
         \subsection{Selection Sort}
             \lstinputlisting[style=JavaStyle]{sorting/SelectionSort.java}
 
-    \section{Search Algorithms}
+        \subsection{Insertion Sort}
+        \subsection{Merge Sort}
+        \subsection{Quick Sort}
+        \subsection{Heap Sort}
+        \subsection{Counting Sort}
+        \subsection{Radix Sort}
+        \subsection{Bucket Sort}
+
+\section{Search Algorithms}
+
+
+        \subsection{Linear Search}
+        \subsection{Binary Search}
+        \subsection{Depth-First Search (DFS)}
+        \subsection{Breadth-First Search (BFS)}
+
+
+        \subsection{}
+        \subsection{}
+        \subsection{}
+        \subsection{}
+        \subsection{}
+        \subsection{}
+        \subsection{}
+        \subsection{}
+
+
+
+
+
+
+
+
+
 
 
 \end{document}
