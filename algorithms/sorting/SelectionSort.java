@@ -1,7 +1,9 @@
+package sorting;
+
 public class SelectionSort {
 
     // Function to perform selection sort
-    void sort(int arr[]) {
+    public static void sort(int arr[]) {
         int n = arr.length;
 
         // One by one move boundary of unsorted subarray
@@ -22,7 +24,7 @@ public class SelectionSort {
     }
 
     // Utility method to print the array
-    void printArray(int arr[]) {
+    public static void printArray(int arr[]) {
         int n = arr.length;
         for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");
