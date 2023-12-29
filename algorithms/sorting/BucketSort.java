@@ -1,28 +1,25 @@
+package sorting;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class BucketSort {
 
-	// Function to perform bucket sort
 	public static void sort(int[] arr, int numberOfBuckets) {
 		if (arr.length <= 1) return;
 
-		// Create bucket array
 		List<Integer>[] buckets = new List[numberOfBuckets];
 
-		// Initialize empty buckets
 		for (int i = 0; i < numberOfBuckets; i++) {
 			buckets[i] = new ArrayList<>();
 		}
 
-		// Distribute input array values into buckets
 		for (int item : arr) {
 			int bucketIndex = item / numberOfBuckets;
 			buckets[bucketIndex].add(item);
 		}
 
-		// Sort individual buckets and concatenate all buckets into the original array
 		int index = 0;
 		for (int i = 0; i < numberOfBuckets; i++) {
 			Collections.sort(buckets[i]);
@@ -30,5 +27,25 @@ public class BucketSort {
 				arr[index++] = item;
 			}
 		}
+	}
+
+	public static void printArray(int[] arr) {
+		for (int item : arr) {
+			System.out.print(item + " ");
+		}
+		System.out.println();
+	}
+
+	public static void main(String[] args) {
+		int[] arr = {22, 45, 12, 8, 10, 6, 72, 81, 33, 18, 50, 14};
+		int numberOfBuckets = 5; // For example
+
+		System.out.println("Original Array:");
+		printArray(arr);
+
+		sort(arr, numberOfBuckets);
+
+		System.out.println("Sorted Array:");
+		printArray(arr);
 	}
 }
