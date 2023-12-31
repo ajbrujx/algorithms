@@ -18,22 +18,4 @@ public class SelectionSort {
             arr[i] = temp;
         }
     }
-
-    public static void printArray(int arr[]) {
-        int n = arr.length;
-        for (int i = 0; i < n; ++i)
-            System.out.print(arr[i] + " ");
-        System.out.println();
-    }
-
-    public static void main(String args[]) {
-        SelectionSort ob = new SelectionSort();
-        int arr[] = {64, 25, 12, 22, 11};
-        System.out.println("Original array");
-        ob.printArray(arr);
-
-        ob.sort(arr);
-        System.out.println("Sorted array");
-        ob.printArray(arr);
-    }
 }

@@ -2,7 +2,7 @@ package sorting;
 
 public class CountingSort {
 
-	void sort(int[] arr) {
+	public static void sort(int[] arr) {
 		int n = arr.length;
 
 		int[] output = new int[n];
@@ -31,7 +31,7 @@ public class CountingSort {
 		}
 	}
 
-	int getMax(int[] arr) {
+	public static int getMax(int[] arr) {
 		int max = arr[0];
 		for (int i = 1; i < arr.length; i++) {
 			if (arr[i] > max) {
@@ -39,23 +39,5 @@ public class CountingSort {
 			}
 		}
 		return max;
-	}
-
-	static void printArray(int[] arr) {
-		for (int i = 0; i < arr.length; ++i) {
-			System.out.print(arr[i] + " ");
-		}
-		System.out.println();
-	}
-
-	public static void main(String[] args) {
-		CountingSort sort = new CountingSort();
-		int[] arr = {4, 2, 2, 8, 3, 3, 1};
-		System.out.println("Original Array:");
-		printArray(arr);
-
-		sort.sort(arr);
-		System.out.println("Sorted Array:");
-		printArray(arr);
 	}
 }

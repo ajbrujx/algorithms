@@ -28,24 +28,4 @@ public class BucketSort {
 			}
 		}
 	}
-
-	public static void printArray(int[] arr) {
-		for (int item : arr) {
-			System.out.print(item + " ");
-		}
-		System.out.println();
-	}
-
-	public static void main(String[] args) {
-		int[] arr = {22, 45, 12, 8, 10, 6, 72, 81, 33, 18, 50, 14};
-		int numberOfBuckets = 5; // For example
-
-		System.out.println("Original Array:");
-		printArray(arr);
-
-		sort(arr, numberOfBuckets);
-
-		System.out.println("Sorted Array:");
-		printArray(arr);
-	}
 }
